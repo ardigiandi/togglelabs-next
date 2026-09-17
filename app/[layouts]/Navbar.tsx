@@ -1,8 +1,10 @@
 import Image from "next/image";
+import DesktopNavbar from "../[components]/DesktopNavbar";
+import MobileNavbar from "../[components]/MobileNavbar";
 
 export default function Navbar() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-hidden">
       <Image
         src="/images/pettern.svg"
         alt=""
@@ -11,50 +13,26 @@ export default function Navbar() {
         priority
       />
 
-      <div className="absolute top-10 inset-x-0 px-24 flex items-center justify-between">
-        <Image
-          src="/images/togglelabss.svg"
-          alt=""
-          width={129}
-          height={26}
-          style={{ width: "auto", height: "auto" }}
-          priority
-        />
+      <div className="absolute top-10 inset-x-0 px-5 lg:px-24 flex items-center justify-between bg-transparent">
+        <div className="relative w-32.25 h-6.5">
+          <Image
+            src="/images/togglelabss.svg"
+            alt=""
+            fill
+            sizes="129px"
+            priority
+          />
+        </div>
 
-        {/* <Image src="/images/star.svg" alt="star" width={100} height={100} className="w-full h-auto" /> */}
+        {/* Desktop Navbar */}
+        <DesktopNavbar />
 
-        <ul className="flex gap-10">
-          <li>
-            <a href="#" className="text-base leading-4 tracking-primary">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-base leading-4 tracking-primary">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-base leading-4 tracking-primary">
-              Portofolio
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-base leading-4 tracking-primary">
-              Testimonial
-            </a>
-          </li>
-        </ul>
-
-        <a
-          href="#"
-          className="text-base bg-primary rounded-full px-8 py-2.5 shadow-custom"
-        >
-          Book a Call
-        </a>
+        <div className="block md:hidden">
+          <MobileNavbar />
+        </div>
       </div>
 
-      <div className="absolute left-0 top-36">
+      <div className="absolute left-0 top-36 hidden lg:block">
         <Image
           src="/images/star.svg"
           alt=""
@@ -81,7 +59,7 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="absolute right-0 top-32">
+      <div className="absolute right-0 top-32 hidden lg:block">
         <Image
           src="/images/star.svg"
           alt=""
@@ -116,33 +94,33 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-12">
+      <div
+        className="absolute top-1/2 md:top-1/3 lg:top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-14 md:mt-10 bg-transparent
+      "
+      >
         <span className="bg-white/10 py-1.5 px-4 border-gray-600 text-xs leading-4 tracking-primary border-2 rounded-full">
           Digital Product Design Studio
         </span>
 
-        <div className="mt-4 flex flex-col gap-8 items-center">
-          <h1
-            id="scramble-text-original"
-            className="text-[56px] lg:text-[68px] font-bold leading-tight lg:leading-22 tracking-primary max-w-6xl wrap-break-word"
-          >
+        <div className="mt-4 flex flex-col gap-8 items-center bg-transparent">
+          <h1 className="text-[40px] md:text-[55px] lg:text-[68px] font-bold leading-tight lg:leading-22 tracking-primary max-w-6xl wrap-break-word bg-transparent">
             We turn ideas into sharp digital products.
           </h1>
-          <p className="text-base leading-6 font-normal w-[676px] max-w-full">
+          <p className="text-sm lg:text-base leading-6 font-normal w-full md:w-169 bg-transparent">
             We help businesses redesign websites and applications that are
             easier to use, aligned with business goals, and built to create
             better customer experiences.
           </p>
-          <div className="flex gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
             <a
               href="#"
-              className="text-base leading-6 tracking-primary font-medium bg-primary px-8 py-2.5 rounded-full shadow-custom"
+              className="text-sm lg:text-base leading-6 tracking-primary font-medium bg-primary px-8 py-2.5 rounded-full shadow-custom"
             >
               Start Your Project
             </a>
             <a
               href="#"
-              className="text-base leading-6 tracking-primary font-medium text-black bg-white px-8 py-2.5 rounded-full shadow-custom2"
+              className="text-sm lg:text-base leading-6 tracking-primary font-medium text-black bg-white px-8 py-2.5 rounded-full shadow-custom2"
             >
               See Our Portofolio
             </a>
