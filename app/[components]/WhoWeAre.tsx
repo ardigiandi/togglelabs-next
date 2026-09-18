@@ -2,8 +2,8 @@ export default function WhoWeAre() {
   return (
     <div className="md:max-w-6xl md:mx-auto mt-32 flex flex-col md:flex-col lg:flex-row justify-between items-center gap-10 px-5 z-10 ">
       <div className="w-full md:w-full lg:w-[50%] flex flex-col items-start">
-        <span className="py-2 px-3 border border-gray-500 rounded-full">
-          <h1 className="bg-secondary text-xs font-semibold leading-3.5 tracking-primary ">Who We Are</h1>
+        <span className="text-xs font-semibold leading-3.5 tracking-primary bg-white/10 py-2 px-3 border border-gray-500 rounded-full">
+          Who We Are
         </span>
         <h1 className="text-2xl md:text-4xl mt-4 font-bold leading-8 md:leading-11 tracking-normal md:tracking-primary">
           Building digital solutions to solve concrete business challenges.

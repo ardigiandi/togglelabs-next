@@ -1,5 +1,9 @@
+import HowWeHelp from "./[components]/HowWeHelp";
+import OurProjects from "./[components]/OurProjects";
+import OurWorkSystem from "./[components]/OurWorkSystem";
 import Tech from "./[components]/Tech";
 import WhoWeAre from "./[components]/WhoWeAre";
+import WorkTogether from "./[components]/WorkTogether";
 import Navbar from "./[layouts]/Navbar";
 
 export default function Home() {
@@ -8,9 +12,10 @@ export default function Home() {
       <Navbar />
       <Tech />
       <WhoWeAre />
-      <div className="mt-52">
-
-      </div>
+      <HowWeHelp />
+      <OurProjects />
+      <OurWorkSystem />
+      {/* <WorkTogether /> */}
     </>
   )
 }
