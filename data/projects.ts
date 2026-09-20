@@ -8,6 +8,14 @@ export type Project = {
   href: string;
 };
 
+export type Testimonials = {
+  id: number;
+  quote: string;
+  name: string;
+  role: string;
+  logo: string;
+};
+
 export const projects: Project[] = [
   {
     id: 1,
@@ -38,5 +46,32 @@ export const projects: Project[] = [
     description:
       "Jasmine Beauty is a modern, minimalist skincare e-commerce platform centered on natural beauty and self-confidence, featuring an elegant, warm terracotta aesthetic.",
     href: "#",
+  },
+];
+
+export const testimonials: Testimonials[] = [
+  {
+    id: 1,
+    quote:
+      "ToggleLabs helped us turn a complex product into a simple, intuitive experience that our users genuinely enjoy.",
+    name: "Alex Morgan",
+    role: "Founder, Acme Studio",
+    logo: "/images/acme.png",
+  },
+  {
+    id: 2,
+    quote:
+      "ToggleLabs helped us turn a complex product into a simple, intuitive experience that our users genuinely enjoy.",
+    name: "Alex Morgan",
+    role: "Founder, Acme Studio",
+    logo: "/images/acme.png",
+  },
+  {
+    id: 3,
+    quote:
+      "ToggleLabs helped us turn a complex product into a simple, intuitive experience that our users genuinely enjoy.",
+    name: "Alex Morgan",
+    role: "Founder, Acme Studio",
+    logo: "/images/acme.png",
   },
 ];

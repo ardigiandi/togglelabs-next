@@ -1,3 +1,4 @@
+import Footer from "./[components]/Footer";
 import HowWeHelp from "./[components]/HowWeHelp";
 import OurProjects from "./[components]/OurProjects";
 import OurWorkSystem from "./[components]/OurWorkSystem";
@@ -17,7 +18,8 @@ export default function Home() {
       <OurProjects />
       <OurWorkSystem />
       <Testimonials />
-      {/* <WorkTogether /> */}
+      <WorkTogether />
+      <Footer/>
     </>
   )
 }

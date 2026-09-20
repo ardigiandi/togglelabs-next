@@ -2,7 +2,7 @@ import { projects } from "@/data/projects";
 
 export default function OurProjects() {
   return (
-    <div className="max-w-6xl mx-auto mt-20 lg:mt-32 px-5 lg:px-0">
+    <div className="max-w-6xl mx-auto mt-32 lg:mt-32 px-5 lg:px-0">
       <div className="flex flex-col lg:flex-row justify-between items-end">
         <div className="flex flex-col gap-4 w-full lg:w-130">
           <span className="text-xs font-semibold leading-3.5 tracking-primary bg-white/10 py-2 px-3 border border-gray-500 rounded-full w-fit">

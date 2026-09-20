@@ -10,35 +10,8 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { testimonials } from "@/data/projects";
 
-const testimonials = [
-  {
-    quote:
-      "ToggleLabs helped us turn a complex product into a simple, intuitive experience that our users genuinely enjoy.",
-    name: "Alex Morgan",
-    role: "Founder, Acme Studio",
-    logo: "/images/acme.png",
-  },
-  {
-    quote:
-      "The engineering precision ToggleLabs delivered was outstanding. Our load times dropped dramatically.",
-    name: "Devon Webb",
-    role: "CTO, Horizon Tech",
-    logo: "/images/acme.png",
-  },
-  {
-    quote: "Fast, communicative, and detail-oriented from day one.",
-    name: "Sara Lee",
-    role: "PM, Northwind",
-    logo: "/images/acme.png",
-  },
-  {
-    quote: "They shipped in weeks what we expected to take months.",
-    name: "Budi Santoso",
-    role: "CEO, Nusa Labs",
-    logo: "/images/acme.png",
-  },
-];
 
 export default function Testimonials() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -61,7 +34,7 @@ export default function Testimonials() {
   }, [api]);
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-24">
+    <section className="relative overflow-hidden mt-32">
       {/* Glow sebagai background */}
       <div
         aria-hidden
@@ -72,7 +45,7 @@ export default function Testimonials() {
           alt=""
           fill
           priority
-          className="object-cover object-top"
+          className="object-contain object-top"
         />
       </div>
 
