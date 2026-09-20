@@ -29,7 +29,7 @@
 }
 
 @layer base{
-    * {
+    body {
         background-color: #08090A;
         color: #ffff;
     }

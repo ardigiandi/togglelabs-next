@@ -18,33 +18,33 @@ export default function WhoWeAre() {
       </div>
 
       <div className="flex flex-col items-center bg-secondary p-10 w-full md:w-full lg:w-[50%] rounded-3xl border border-gray-800">
-        <div className="flex gap-10 w-full border-b border-gray-800 pb-8 justify-center bg-transparent">
-          <div className="flex flex-col gap-2 text-center bg-transparent">
-            <h1 className="text-3xl md:text-5xl font-extrabold leading-[100%] tracking-normal bg-transparent ">
+        <div className="flex gap-10 w-full border-b border-gray-800 pb-8 justify-center">
+          <div className="flex flex-col gap-2 text-center">
+            <h1 className="text-3xl md:text-5xl font-extrabold leading-[100%] tracking-normal ">
               10+
             </h1>
-            <p className="text-sm font-normal leading-3.5 tracking-primary bg-transparent">
+            <p className="text-sm font-normal leading-3.5 tracking-primary">
               Successful Project
             </p>
           </div>
-          <div className="flex flex-col gap-2 text-center bg-transparent">
-            <h1 className="text-3xl md:text-5xl  font-extrabold leading-[100%] tracking-normal bg-transparent">
+          <div className="flex flex-col gap-2 text-center">
+            <h1 className="text-3xl md:text-5xl  font-extrabold leading-[100%] tracking-normal">
               98%
             </h1>
-            <p className="text-sm font-normal leading-3.5 tracking-primary bg-transparent">
+            <p className="text-sm font-normal leading-3.5 tracking-primary">
               Client satisfaction
             </p>
           </div>
-          <div className="flex flex-col gap-2 text-center bg-transparent">
-            <h1 className="text-3xl md:text-5xl  font-extrabold leading-[100%] tracking-normal bg-transparent">
+          <div className="flex flex-col gap-2 text-center">
+            <h1 className="text-3xl md:text-5xl  font-extrabold leading-[100%] tracking-normal">
               2+
             </h1>
-            <p className="text-sm font-normal leading-3.5 tracking-primary bg-transparent">
+            <p className="text-sm font-normal leading-3.5 tracking-primary">
               Years Experience
             </p>
           </div>
         </div>
-        <p className="pt-8 text-sm text-abu bg-transparent">
+        <p className="pt-8 text-sm text-abu">
           "Our ultimate metric is the operational shift. If the website doesn't
           make customer acquisition easier, or the app doesn't save your ops
           team time, we haven't done our job."

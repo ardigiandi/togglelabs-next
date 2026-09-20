@@ -26,8 +26,8 @@ export default function OurProjects() {
             className="flex flex-col md:flex-row p-6 rounded-3xl gap-12 bg-secondary w-full border-gray-600 border items-center"
           >
             <img src={p.image} alt="#" className="w-80 lg:w-125" />
-            <div className="flex flex-col gap-6 bg-secondary">
-              <div className="flex gap-2 bg-secondary">
+            <div className="flex flex-col gap-6 ">
+              <div className="flex gap-2 ">
                 {p.tags.map((tag) => (
                   <span
                     key={tag}
@@ -38,27 +38,23 @@ export default function OurProjects() {
                 ))}
               </div>
 
-              <div className="flex flex-col gap-2 bg-secondary">
-                <span className="text-xs font-medium leading-4.5 tracking-primary bg-secondary">
+              <div className="flex flex-col gap-2 ">
+                <span className="text-xs font-medium leading-4.5 tracking-primary ">
                   {p.category}
                 </span>
-                <h1 className="text-xl md:text-2xl font-bold leading-9 tracking-primary bg-secondary">
+                <h1 className="text-xl md:text-2xl font-bold leading-9 tracking-primary ">
                   {p.title}
                 </h1>
-                <p className="text-sm md:text-base font-normal leading-6 tracking-primary text-abu bg-secondary">
+                <p className="text-sm md:text-base font-normal leading-6 tracking-primary text-abu ">
                   {p.description}
                 </p>
               </div>
 
-              <a href={p.href} className="flex gap-2 items-center bg-secondary">
-                <h1 className="text-sm font-medium leading-5 tracking-primary bg-secondary">
+              <a href={p.href} className="flex gap-2 items-center ">
+                <h1 className="text-sm font-medium leading-5 tracking-primary ">
                   See Project
                 </h1>
-                <img
-                  src="/images/arrow-right.svg"
-                  alt="#"
-                  className="w-5 bg-secondary"
-                />
+                <img src="/images/arrow-right.svg" alt="#" className="w-5 " />
               </a>
             </div>
           </div>
