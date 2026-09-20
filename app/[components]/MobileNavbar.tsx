@@ -56,7 +56,7 @@ export default function MobileNavbar() {
         <SheetTrigger render={<Button variant="ghost" size={"lg"} />}>
           <PanelRightOpen className="w-10 h-10" />
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className={"bg-secondary border-white/10"}>
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>

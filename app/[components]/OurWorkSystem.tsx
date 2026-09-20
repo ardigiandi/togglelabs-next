@@ -17,22 +17,14 @@ export default function OurWorkSystem() {
       <div className="mt-12 flex flex-wrap justify-center gap-6">
         <div className="w-full md:w-67.5 px-8 pt-8 pb-14 bg-secondary rounded-3xl">
           <div className="flex justify-between items-center ">
-            <Image
-              src="/images/search.svg"
-              alt="#"
-              width={20}
-              height={20}
-              className="bg-biru/12 p-3 rounded-xl"
-            />
-            <p className="text-[28px] font-extrabold text-biru/20 ">
-              01
-            </p>
+            <div className="bg-biru/12 p-3 rounded-xl">
+              <Image src="/images/search.svg" alt="#" width={20} height={20} />
+            </div>
+            <p className="text-[28px] font-extrabold text-biru/20 ">01</p>
           </div>
 
           <div className="mt-6 border-b pb-3 border-white/10 ">
-            <h1 className="text-xl font-bold leading-7 ">
-              Discover
-            </h1>
+            <h1 className="text-xl font-bold leading-7 ">Discover</h1>
             <p className="mt-1 text-sm font-medium leading-5 ">
               Understand before we build.
             </p>
@@ -44,16 +36,10 @@ export default function OurWorkSystem() {
         </div>
         <div className="w-full md:w-67.5 px-8 pt-8 pb-14 bg-secondary rounded-3xl">
           <div className="flex justify-between items-center">
-            <Image
-              src="/images/target.svg"
-              alt="#"
-              width={20}
-              height={20}
-              className="bg-biru/12 p-3 rounded-xl"
-            />
-            <p className="text-[28px] font-extrabold text-biru/20">
-              02
-            </p>
+            <div className="bg-biru/12 p-3 rounded-xl">
+              <Image src="/images/target.svg" alt="#" width={20} height={20} />
+            </div>
+            <p className="text-[28px] font-extrabold text-biru/20">02</p>
           </div>
 
           <div className="mt-6 border-b pb-3 border-white/10">
@@ -69,16 +55,10 @@ export default function OurWorkSystem() {
         </div>
         <div className="w-full md:w-67.5 px-8 pt-8 pb-14 bg-secondary rounded-3xl">
           <div className="flex justify-between items-center">
-            <Image
-              src="/images/pen-tool.svg"
-              alt="#"
-              width={20}
-              height={20}
-              className="bg-biru/12 p-3 rounded-xl"
-            />
-            <p className="text-[28px] font-extrabold text-biru/20">
-              03
-            </p>
+           <div className="bg-biru/12 p-3 rounded-xl">
+              <Image src="/images/pen-tool.svg" alt="#" width={20} height={20} />
+            </div>
+            <p className="text-[28px] font-extrabold text-biru/20">03</p>
           </div>
 
           <div className="mt-6 border-b pb-3 border-white/10">
@@ -94,13 +74,9 @@ export default function OurWorkSystem() {
         </div>
         <div className="w-full md:w-67.5 px-8 pt-8 pb-14 bg-secondary rounded-3xl">
           <div className="flex justify-between items-center ">
-            <Image
-              src="/images/code2.svg"
-              alt="#"
-              width={20}
-              height={20}
-              className="bg-biru/12 p-3 rounded-xl"
-            />
+            <div className="bg-biru/12 p-3 rounded-xl">
+              <Image src="/images/code2.svg" alt="#" width={20} height={20} />
+            </div>
             <p className="text-[28px] font-extrabold text-biru/20 ">04</p>
           </div>
 
