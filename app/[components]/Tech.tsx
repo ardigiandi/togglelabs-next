@@ -1,6 +1,6 @@
 export default function Tech() {
   return (
-    <div className="max-w-6xl mx-auto mt-10 z-10 md:-mt-87.5 lg:mt-10 flex flex-col items-center gap-4 bg-transparent">
+    <div className="max-w-6xl mx-auto mt-10 z-10 md:-mt-87.5 lg:mt-10 flex flex-col items-center gap-4">
       <h1 className="text-sm lg:text-base font-normal leading-6 tracking-primary">
         Our Tech Stack
       </h1>

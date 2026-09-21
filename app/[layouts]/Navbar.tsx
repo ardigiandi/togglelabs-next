@@ -13,7 +13,7 @@ export default function Navbar() {
         priority
       />
 
-      <div className="absolute top-10 inset-x-0 px-5 lg:px-24 flex items-center justify-between bg-transparent">
+      <div className="absolute top-10 inset-x-0 px-5 lg:px-24 flex items-center justify-between">
         <div className="relative w-32.25 h-6.5">
           <Image
             src="/images/togglelabss.svg"
@@ -95,18 +95,18 @@ export default function Navbar() {
       </div>
 
       <div
-        className="absolute top-1/2 md:top-1/3 lg:top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-14 md:mt-10 bg-transparent
+        className="absolute top-1/2 md:top-1/3 lg:top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-10 md:mt-10
       "
       >
         <span className="bg-white/10 py-1.5 px-4 border-gray-600 text-xs leading-4 tracking-primary border-2 rounded-full">
           Digital Product Design Studio
         </span>
 
-        <div className="mt-4 flex flex-col gap-8 items-center bg-transparent">
-          <h1 className="text-[40px] md:text-[55px] lg:text-[68px] font-bold leading-tight lg:leading-22 tracking-primary max-w-6xl wrap-break-word bg-transparent">
+        <div className="mt-4 flex flex-col gap-8 items-center">
+          <h1 className="text-[40px] md:text-[55px] lg:text-[68px] font-bold leading-tight lg:leading-22 tracking-primary max-w-6xl wrap-break-word">
             We turn ideas into sharp digital products.
           </h1>
-          <p className="text-sm lg:text-base leading-6 font-normal w-full md:w-169 bg-transparent">
+          <p className="text-sm lg:text-base leading-6 font-normal w-full md:w-169">
             We help businesses redesign websites and applications that are
             easier to use, aligned with business goals, and built to create
             better customer experiences.
