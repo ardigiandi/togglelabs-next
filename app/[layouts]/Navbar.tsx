@@ -95,7 +95,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className="absolute top-1/2 md:top-1/3 lg:top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-10 md:mt-10
+        className="absolute top-1/2 md:top-1/3 lg:top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-204.75 max-w-[90vw] px-4 mt-5 md:mt-10
       "
       >
         <span className="bg-white/10 py-1.5 px-4 border-gray-600 text-xs leading-4 tracking-primary border-2 rounded-full">
