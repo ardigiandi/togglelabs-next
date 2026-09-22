@@ -17,8 +17,8 @@ export default function WhoWeAre() {
         </p>
       </div>
 
-      <div className="flex flex-col items-center bg-secondary p-10 w-full md:w-full lg:w-[50%] rounded-3xl border border-gray-800">
-        <div className="flex gap-10 w-full border-b border-gray-800 pb-8 justify-center">
+      <div className="flex flex-col items-center bg-secondary p-10 w-full md:w-full lg:w-[50%] rounded-3xl border border-gray-600">
+        <div className="flex gap-10 w-full border-b border-gray-600 pb-8 justify-center">
           <div className="flex flex-col gap-2 text-center">
             <h1 className="text-3xl md:text-5xl font-extrabold leading-[100%] tracking-normal ">
               10+
