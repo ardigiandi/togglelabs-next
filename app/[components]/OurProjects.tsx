@@ -1,6 +1,8 @@
-import { projects } from "@/data/projects";
+import { getProjects } from "@/lib/projects-store";
 
-export default function OurProjects() {
+export default async function OurProjects() {
+  const projects = await getProjects();
+
   return (
     <div className="max-w-6xl mx-auto mt-32 lg:mt-32 px-5 lg:px-0">
       <div className="flex flex-col lg:flex-row justify-between items-end">

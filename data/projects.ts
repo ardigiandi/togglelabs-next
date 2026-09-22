@@ -5,7 +5,7 @@ export type Project = {
   category: string;
   title: string;
   description: string;
-  href: string;
+  href?: string;
 };
 
 export type Testimonials = {
