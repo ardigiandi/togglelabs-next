@@ -1,6 +1,6 @@
 import Footer from "./[components]/Footer";
 import HowWeHelp from "./[components]/HowWeHelp";
-import OurProjects from "./[components]/OurProjects";
+import OurProjects from "./projects/page";
 import OurWorkSystem from "./[components]/OurWorkSystem";
 import Tech from "./[components]/Tech";
 import Testimonials from "./[components]/Testimonials";

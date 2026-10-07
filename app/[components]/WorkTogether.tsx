@@ -19,7 +19,7 @@ export default function WorkTogether() {
           href="#"
           className="bg-biru px-8 py-2.5 rounded-full shadow-custom text-base font-medium leading-6 tracking-primary"
         >
-          Schedue Call
+          Schedule Call
         </Link>
         <Link
           href="#"

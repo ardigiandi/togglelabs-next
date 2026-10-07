@@ -1,4 +1,5 @@
 import { getProjects } from "@/lib/projects-store";
+import Link from "next/link";
 
 export default async function OurProjects() {
   const projects = await getProjects();
@@ -52,12 +53,12 @@ export default async function OurProjects() {
                 </p>
               </div>
 
-              <a href={p.href} className="flex gap-2 items-center ">
+              <Link href={`/projects/${p.slug}`} className="flex gap-2 items-center ">
                 <h1 className="text-sm font-medium leading-5 tracking-primary ">
                   See Project
                 </h1>
                 <img src="/images/arrow-right.svg" alt="#" className="w-5 " />
-              </a>
+              </Link>
             </div>
           </div>
         ))}

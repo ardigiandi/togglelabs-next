@@ -1,6 +1,7 @@
 import Image from "next/image";
 import DesktopNavbar from "../[components]/DesktopNavbar";
 import MobileNavbar from "../[components]/MobileNavbar";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -15,13 +16,15 @@ export default function Navbar() {
 
       <div className="absolute top-10 inset-x-0 px-5 lg:px-24 flex items-center justify-between">
         <div className="relative w-32.25 h-6.5">
-          <Image
-            src="/images/togglelabss.svg"
-            alt=""
-            fill
-            sizes="129px"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/images/togglelabss.svg"
+              alt=""
+              fill
+              sizes="129px"
+              priority
+            />
+          </Link>
         </div>
 
         {/* Desktop Navbar */}
