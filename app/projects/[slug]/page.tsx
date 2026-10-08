@@ -64,13 +64,15 @@ export default async function DetailProject({ params }: Props) {
             </span>
           ))}
         </div>
-        <h1 className="text-6xl md:text-8xl">{project.title}</h1>
-        <p className="max-w-lg text-zinc-300">{project.description}</p>
+        <h1 className="text-4xl md:text-6xl ">{project.title}</h1>
+        <p className="max-w-lg text-abu text-sm md:text-base">
+          {project.description}
+        </p>
       </section>
 
       <section className="relative mt-12 aspect-16/10 w-full overflow-hidden rounded-3xl bg-zinc-800">
         <Image
-          src={project.image}
+          src={project.hero}
           alt={`Mockup ${project.title}`}
           fill
           priority
@@ -115,15 +117,11 @@ export default async function DetailProject({ params }: Props) {
             <dd className="text-sm font-medium">{project.info.duration}</dd>
           </div>
         </dl>
-
-        <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs tracking-widest text-zinc-300">
-          SCROLL UNTUK MENJELAJAH LAYAR
-        </p>
       </section>
 
       <ProcessTabs process={project.process} title={project.title} />
 
-      <section className="py-8">
+      <section className="mt-28">
         <p className="mb-6 text-xs tracking-widest text-zinc-400">
           FITUR UTAMA
         </p>
@@ -131,7 +129,7 @@ export default async function DetailProject({ params }: Props) {
           {project.features.map((f, i) => (
             <div
               key={f.title}
-              className={`flex min-h-64 flex-col justify-end rounded-3xl p-6 ${
+              className={`flex min-h-64 flex-col justify-end rounded-2xl p-6 ${
                 f.featured ? "bg-red-700" : "bg-zinc-900"
               } ${i === 0 ? "md:col-span-2" : ""}`}
             >
@@ -143,7 +141,7 @@ export default async function DetailProject({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="my-16 flex flex-col items-center gap-4 rounded-3xl bg-zinc-900 px-6 py-16 text-center">
+      <section className="mt-28 flex flex-col items-center gap-4 rounded-3xl bg-zinc-900 px-6 py-16 text-center">
         <h2 className="text-4xl md:text-5xl">Punya project serupa?</h2>
         <p className="text-zinc-300">Ceritakan idenya, kita bangun bersama.</p>
         <Link
