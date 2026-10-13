@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 export default async function DetailProject({ params }: Props) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
-  if (!project) notFound();
+  if (!project) notFound(); 
 
   const nomor = String(project.id).padStart(2, "0");
   const total = String(projects.length).padStart(2, "0");

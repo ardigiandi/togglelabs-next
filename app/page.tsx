@@ -7,11 +7,13 @@ import Testimonials from "./[components]/Testimonials";
 import WhoWeAre from "./[components]/WhoWeAre";
 import WorkTogether from "./[components]/WorkTogether";
 import Navbar from "./[layouts]/Navbar";
+import Hero from "./[components]/Hero";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <Hero />
       <Tech />
       <WhoWeAre />
       <HowWeHelp />

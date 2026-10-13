@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HowWeHelp() {
   return (
     <div className="w-full md:max-w-6xl md:mx-auto mt-32 flex flex-col gap-12 px-5 lg:px-0">
@@ -19,7 +21,14 @@ export default function HowWeHelp() {
           <div className="flex flex-col gap-4 bg-transparent">
             <div className="bg-transparent">
               <div className="bg-biru p-3 rounded-xl w-fit">
-                <img src="/images/design.svg" alt="" className="w-6 bg-biru" />
+                <Image
+                  src="/images/design.svg"
+                  alt=""
+                  className="w-6 bg-biru"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
             <h1 className="text-lg md:text-xl font-semibold leading-5 tracking-primary bg-transparent">
@@ -34,7 +43,14 @@ export default function HowWeHelp() {
           <div className="flex flex-col gap-4 bg-transparent">
             <div className="bg-transparent">
               <div className="bg-biru p-3 rounded-xl w-fit">
-                <img src="/images/code.svg" alt="" className="w-6 bg-biru" />
+                <Image
+                  src="/images/code.svg"
+                  alt=""
+                  className="w-6 bg-biru"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
             <h1 className="text-lg md:text-xl font-semibold leading-5 tracking-primary bg-transparent">
