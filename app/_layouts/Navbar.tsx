@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import DesktopNavbar from "../[components]/DesktopNavbar";
-import MobileNavbar from "../[components]/MobileNavbar";
+import DesktopNavbar from "../_components/DesktopNavbar";
+import MobileNavbar from "../_components/MobileNavbar";
 
 export default function Navbar() {
   return (

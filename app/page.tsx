@@ -1,13 +1,13 @@
-import Footer from "./[components]/Footer";
-import HowWeHelp from "./[components]/HowWeHelp";
+import Footer from "./_components/Footer";
+import HowWeHelp from "./_components/HowWeHelp";
 import OurProjects from "./projects/page";
-import OurWorkSystem from "./[components]/OurWorkSystem";
-import Tech from "./[components]/Tech";
-import Testimonials from "./[components]/Testimonials";
-import WhoWeAre from "./[components]/WhoWeAre";
-import WorkTogether from "./[components]/WorkTogether";
-import Navbar from "./[layouts]/Navbar";
-import Hero from "./[components]/Hero";
+import OurWorkSystem from "./_components/OurWorkSystem";
+import Tech from "./_components/Tech";
+import Testimonials from "./_components/Testimonials";
+import WhoWeAre from "./_components/WhoWeAre";
+import WorkTogether from "./_components/WorkTogether";
+import Navbar from "./_layouts/Navbar";
+import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
