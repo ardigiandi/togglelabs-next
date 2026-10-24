@@ -3,7 +3,7 @@ import { projects as seed } from "@/data/projects";
 export type Project = (typeof seed)[number];
 export type NewProject = Omit<Project, "id">;
 
-// sementara disimpan di memori, awalnya diisi dari data dummy
+
 const db: Project[] = [...seed];
 
 export async function getProjects(): Promise<Project[]> {
