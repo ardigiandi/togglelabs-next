@@ -42,6 +42,11 @@ export type Project = {
     };
   };
 
+  challenges: {
+    title: string;
+    description: string;
+    points: string[];
+  };
 };
 
 type ProjectInput = Omit<Project, "slug">;
@@ -99,9 +104,16 @@ const projectData: ProjectInput[] = [
       },
     },
 
-    // challenges: {
-
-    // }
+    challenges: {
+      title: "Keep the luxury. Remove the friction.",
+      description:
+        "A minimal storefront should never leave shoppers guessing. The design challenge is to balance a fashion-led visual identity with clear product information and familiar shopping behavior.",
+      points: [
+        "Make collections easy to discover.",
+        "Bring fit, material, and availability into focus.",
+        "Keep the path from product to checkout clear.",
+      ],
+    },
   },
 ];
 

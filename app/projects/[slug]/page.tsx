@@ -35,15 +35,15 @@ export default async function DetailProject({ params }: Props) {
 
           <div className="flex flex-col md:flex-row justify-between gap-y-4 md:gap-y-0 items-end mt-8">
             <div className="md:w-200 w-full flex flex-col gap-5">
-              <span className="text-xs font-semibold text-purle leading-3.5 tracking-primary">
+              <span className="text-xs font-semibold text-purple leading-3.5 tracking-primary">
                 {`${project.category} / FEATURED PROJECT`}
               </span>
-              <h1 className="text-5xl md:text-[72px] font-bold leading-[112%] tracking-primary">
+              <h1 className="text-4xl md:text-[72px] font-bold leading-[112%] tracking-primary">
                 {project.title}
               </h1>
             </div>
             <div className="flex flex-col gap-6 md:w-90 w-full">
-              <p className="text-base text-abu font-normal leading-6 tracking-primary">
+              <p className="text-sm md:text-base text-abu font-normal leading-6 tracking-primary">
                 {project.description}
               </p>
               <a href="#" className="flex gap-3 items-center w-fit">
@@ -81,14 +81,14 @@ export default async function DetailProject({ params }: Props) {
               quality={90}
               priority
               className="h-auto w-full rounded-2xl"
-            />  
+            />
           </div>
         </div>
       </section>
 
       <section className="mt-24 border-b border-white/10 pb-20 px-5 md:px-0">
         <div className="flex gap-3 items-center">
-          <span className="text-xs font-semibold text-purle">01</span>
+          <span className="text-xs font-semibold text-purple">01</span>
           <h1 className="text-xs font-semibold text-abu leading-3.5 tracking-primary uppercase">
             Project overview
           </h1>
@@ -96,10 +96,10 @@ export default async function DetailProject({ params }: Props) {
 
         <div className="flex flex-col md:flex-row justify-between mt-10 gap-16">
           <div className="flex flex-col gap-6 md:w-145 w-full">
-            <h1 className="text-4xl md:text-[40px] font-bold leading-12 tracking-primary text-white">
+            <h1 className="text-3xl md:text-[40px] font-bold leading-12 tracking-primary text-white">
               {project.overview.title}
             </h1>
-            <p className="text-base text-abu font-normal leading-6 tracking-primary">
+            <p className="text-sm md:text-base text-abu font-normal leading-6 tracking-primary">
               {project.overview.description}
             </p>
           </div>
@@ -176,54 +176,178 @@ export default async function DetailProject({ params }: Props) {
               The challenge
             </h1>
           </div>
-          <h1 className="mt-6 text-[40px] font-bold leading-12 tracking-primary">
+          <h1 className="mt-6 text-3xl md:text-[40px] font-bold leading-12 tracking-primary">
             Keep the luxury. Remove the friction.
           </h1>
         </div>
 
         <div className="w-full md:w-140">
-          <h1 className="text-base leading-6 font-normal text-abu tracking-primary">
+          <h1 className="text-sm md:text-base leading-6 font-normal text-abu tracking-primary">
             A minimal storefront should never leave shoppers guessing. The
             design challenge is to balance a fashion-led visual identity with
             clear product information and familiar shopping behavior.
           </h1>
           <div className="flex flex-col mt-6 gap-4">
+            {project.challenges.points.map((point, index) => (
+              <div key={index}>
+                <div className="flex gap-2 items-center">
+                  <Image
+                    src="../images/check.svg"
+                    alt=""
+                    width={14}
+                    height={14}
+                    priority
+                  />
+                  <p className="text-sm leading-5 font-normal text-abu tracking-primary">
+                    {point}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto my-24 px-5 md:px-0">
+        <div className="flex flex-col justify-between items-end md:items-start gap-4 md:gap-5">
+          <div className="flex flex-col w-full md:w-145">
             <div className="flex gap-2 items-center">
-              <Image
-                src="../images/check.svg"
-                alt=""
-                width={14}
-                height={14}
-                priority
-              />
-              <p className="text-sm leading-5 font-normal text-abu tracking-primary">
-                Make collections easy to discover.
+              <span className="text-xs font-semibold text-purple">03</span>
+              <h1 className="text-xs font-semibold leading-4 tracking-primary text-abu uppercase">
+                Our approach
+              </h1>
+            </div>
+            <h1 className="mt-6 text-3xl md:text-[40px] font-bold leading-12 tracking-primary">
+              Clarity at every step.
+            </h1>
+          </div>
+
+          <h1 className="w-full md:w-140 text-sm md:text-base leading-6 font-normal text-abu tracking-primary">
+            A proposed workflow connecting brand, customer needs, and the
+            details that make a storefront work.
+          </h1>
+        </div>
+
+        <div className="flex flex-wrap justify-center mt-8 gap-6">
+          <div className="w-full md:w-64 flex flex-col bg-secondary p-7 rounded-3xl border border-white/10">
+            <div className="flex justify-between items-center">
+              <div className="bg-primary/10 p-2.5 rounded-[10px]">
+                <Image
+                  width={20}
+                  height={20}
+                  src="../images/search.svg"
+                  alt=""
+                  className="w-5"
+                />
+              </div>
+              <h1 className="text-sm text-purple font-normal leading-[100%] tracking-normal">
+                01
+              </h1>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-3 border-b border-white/10 pb-6">
+              <h1 className="text-base md:text-lg font-semibold leading-6 tracking-primary">
+                Discover
+              </h1>
+              <p className="text-sm font-normal text-abu leading-5 tracking-primary">
+                Map the shopping journey and the moments where customers need
+                reassurance.
               </p>
             </div>
-            <div className="flex gap-2 items-center">
-              <Image
-                src="../images/check.svg"
-                alt=""
-                width={14}
-                height={14}
-                priority
-              />
-              <p className="text-sm leading-5 font-normal text-abu tracking-primary">
-                Bring fit, material, and availability into focus.
+
+            <span className="mt-6 text-xs text-abu font-normal leading-4 tracking-primary">
+              Journey map · Content audit
+            </span>
+          </div>
+          <div className="w-full md:w-64 flex flex-col bg-secondary p-7 rounded-3xl border border-white/10">
+            <div className="flex justify-between items-center">
+              <div className="bg-primary/10 p-2.5 rounded-[10px]">
+                <Image
+                  width={20}
+                  height={20}
+                  src="../images/scan.svg"
+                  alt=""
+                  className="w-5"
+                />
+              </div>
+              <h1 className="text-sm text-purple font-normal leading-[100%] tracking-normal">
+                02
+              </h1>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-3 border-b border-white/10 pb-6">
+              <h1 className="text-base md:text-lg font-semibold leading-6 tracking-primary">
+                Define
+              </h1>
+              <p className="text-sm font-normal text-abu leading-5 tracking-primary">
+                Make collections, product details, and a direct path to purchase
+                the foundation.
               </p>
             </div>
-            <div className="flex gap-2 items-center">
-              <Image
-                src="../images/check.svg"
-                alt=""
-                width={14}
-                height={14}
-                priority
-              />
-              <p className="text-sm leading-5 font-normal text-abu tracking-primary">
-                Keep the path from product to checkout clear.
+
+            <span className="mt-6 text-xs text-abu font-normal leading-4 tracking-primary">
+              Information architecture · Flows
+            </span>
+          </div>
+          <div className="w-full md:w-64 flex flex-col bg-secondary p-7 rounded-3xl border border-white/10">
+            <div className="flex justify-between items-center">
+              <div className="bg-primary/10 p-2.5 rounded-[10px]">
+                <Image
+                  width={20}
+                  height={20}
+                  src="../images/pen-tool.svg"
+                  alt=""
+                  className="w-5"
+                />
+              </div>
+              <h1 className="text-sm text-purple font-normal leading-[100%] tracking-normal">
+                03
+              </h1>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-3 border-b border-white/10 pb-6">
+              <h1 className="text-base md:text-lg font-semibold leading-6 tracking-primary">
+                Design
+              </h1>
+              <p className="text-sm font-normal text-abu leading-5 tracking-primary">
+                Pair editorial imagery with a quiet interface and consistent
+                commerce patterns.
               </p>
             </div>
+
+            <span className="mt-6 text-xs text-abu font-normal leading-4 tracking-primary">
+              Responsive UI · Design system
+            </span>
+          </div>
+          <div className="w-full md:w-64 flex flex-col bg-secondary p-7 rounded-3xl border border-white/10">
+            <div className="flex justify-between items-center">
+              <div className="bg-primary/10 p-2.5 rounded-[10px]">
+                <Image
+                  width={20}
+                  height={20}
+                  src="../images/code2.svg"
+                  alt=""
+                  className="w-5"
+                />
+              </div>
+              <h1 className="text-sm text-purple font-normal leading-[100%] tracking-normal">
+                04
+              </h1>
+            </div>
+
+            <div className="mt-6 flex flex-col gap-3 border-b border-white/10 pb-6">
+              <h1 className="text-base md:text-lg font-semibold leading-6 tracking-primary">
+                Develop
+              </h1>
+              <p className="text-sm font-normal text-abu leading-5 tracking-primary">
+                Translate the system into reusable components and deliberate
+                loading states.
+              </p>
+            </div>
+
+            <span className="mt-6 text-xs text-abu font-normal leading-4 tracking-primary">
+              MERN storefront · QA checklist
+            </span>
           </div>
         </div>
       </section>

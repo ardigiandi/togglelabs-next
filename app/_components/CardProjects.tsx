@@ -30,11 +30,11 @@ export default async function CardProjects() {
               ))}
             </div>
 
-            <div className="flex flex-col gap-2 ">
+            <div className="flex flex-col gap-4 ">
               <span className="text-xs font-medium leading-4.5 tracking-primary ">
                 {p.category}
               </span>
-              <h1 className="text-xl md:text-2xl font-bold leading-9 tracking-primary ">
+              <h1 className="text-lg md:text-xl font-bold leading-9 tracking-primary ">
                 {p.title}
               </h1>
               <p className="text-sm md:text-base font-normal leading-6 tracking-primary text-abu ">

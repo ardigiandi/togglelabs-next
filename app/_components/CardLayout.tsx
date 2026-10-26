@@ -29,14 +29,14 @@ export default function CardLayout({
             {title}
           </h1>
         </div>
-        <p className="w-full lg:w-115 mt-4 md:mt-0 text-base leading-6 tracking-primary text-abu">
+        <p className="w-full lg:w-115 mt-4 md:mt-0 text-sm md:text-base leading-6 tracking-primary text-abu">
           {description}
         </p>
       </div>
 
       <div className="mt-10 flex flex-col gap-1">
         <Link href="/projects" className="flex justify-end items-center gap-2">
-          <h1 className="text-sm font-medium leading-5 tracking-primary text-abu">
+          <h1 className="text-base md:text-sm font-medium leading-5 tracking-primary text-abu">
             {next}
           </h1>
           {image && (
