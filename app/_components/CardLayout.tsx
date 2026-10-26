@@ -36,7 +36,7 @@ export default function CardLayout({
 
       <div className="mt-10 flex flex-col gap-1">
         <Link href="/projects" className="flex justify-end items-center gap-2">
-          <h1 className="text-base md:text-sm font-medium leading-5 tracking-primary text-abu">
+          <h1 className="text-xs md:text-sm font-medium leading-5 tracking-primary text-abu">
             {next}
           </h1>
           {image && (
