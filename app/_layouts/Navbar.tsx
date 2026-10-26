@@ -11,9 +11,10 @@ export default function Navbar() {
           <Image
             src="/images/togglelabss.svg"
             alt="Toggle Labs"
-            width={129}
-            height={40}
+            width={124}
+            height={26}
             priority
+            style={{ width: "124px", height: "auto" }}
           />
         </Link>
 

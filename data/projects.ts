@@ -7,11 +7,11 @@ function slugify(teks: string) {
     .replace(/-+/g, "-");
 }
 
-export type ProjectFeature = {
-  title: string;
-  description: string;
-  featured?: boolean;
-};
+// export type ProjectFeature = {
+//   title: string;
+//   description: string;
+//   featured?: boolean;
+// };
 
 export type Project = {
   id: number;
@@ -24,18 +24,24 @@ export type Project = {
   description: string;
   href?: string;
 
-  info: {
-    client: string;
-    role: string;
-    stack: string;
-    duration: string;
+  overview: {
+    title: string;
+    description: string;
+    client: {
+      name: string;
+      description: string;
+    };
+    role: {
+      name: string;
+      description: string;
+    };
+    stack: {
+      description: string;
+      images: { src: string; alt: string }[];
+      build: string;
+    };
   };
-  highlights: string[];
-  process: {
-    wireframe: string;
-    design: string;
-  };
-  features: ProjectFeature[];
+
 };
 
 type ProjectInput = Omit<Project, "slug">;
@@ -54,126 +60,48 @@ const projectData: ProjectInput[] = [
     image: "/images/card2.png",
     hero: "/images/card1.png",
     tags: ["Web Design", "MERN Stack", "E-Commerce"],
-    category: "Web",
-    title: "Pancarona",
+    category: "UMKM CLOTHING",
+    title: "Pancarona E-Commerce App",
     description:
       "Platform e-commerce fashion dengan nuansa quiet luxury dan minimalisme yang rapi, dibuat untuk UMKM Clothing.",
     href: "https://pancarona.com",
 
-    info: {
-      client: "UMKM Clothing",
-      role: "UI/UX, Frontend, Backend",
-      stack: "MongoDB, Express, React, Node",
-      duration: "3 bulan",
+    overview: {
+      title: "An understated brand. An effortless storefront.",
+      description:
+        "Pancarona is a modern fashion e-commerce platform built around quiet luxury and sleek minimalism. This case-study concept explores how that identity can guide the entire journey: from discovering a collection to finding the right fit and checking out with confidence.",
+      client: {
+        name: "Pancarona",
+        description: "UMKM Clothing",
+      },
+      role: {
+        name: "Design & development",
+        description: "ToggleLabs Studio",
+      },
+      stack: {
+        description:
+          "Experience strategy · UI/UX design · Responsive storefront · Component system · MERN implementation",
+        images: [
+          {
+            src: "/images/figma.svg",
+            alt: "Pancarona homepage design",
+          },
+          {
+            src: "/images/react.svg",
+            alt: "Pancarona product detail page",
+          },
+          {
+            src: "/images/node.svg",
+            alt: "Pancarona checkout flow",
+          },
+        ],
+        build: "Designed in Figma. Built on MERN.",
+      },
     },
-    highlights: ["Hero slider", "Filter produk", "Checkout 3 langkah"],
-    process: {
-      wireframe: "/images/pancarona/wireframe.png",
-      design: "/images/pancarona/design.png",
-    },
-    features: [
-      {
-        title: "Katalog dan filter produk",
-        description: "Cari berdasarkan kategori, ukuran, dan harga.",
-      },
-      {
-        title: "Checkout",
-        description: "Keranjang sampai bayar dalam 3 langkah.",
-        featured: true,
-      },
-      {
-        title: "Autentikasi",
-        description: "Login dan akun pelanggan.",
-      },
-      {
-        title: "Dashboard admin",
-        description: "Kelola produk, stok, dan pesanan.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    image: "/images/card1.png",
-    hero: "/images/card1.png",
-    tags: ["Web Design", "MERN Stack", "E-Commerce"],
-    category: "Web",
-    title: "Pancarona",
-    description:
-      "Platform e-commerce fashion dengan nuansa quiet luxury dan minimalisme yang rapi, dibuat untuk UMKM Clothing.",
-    href: "https://pancarona.com",
 
-    info: {
-      client: "UMKM Clothing",
-      role: "UI/UX, Frontend, Backend",
-      stack: "MongoDB, Express, React, Node",
-      duration: "3 bulan",
-    },
-    highlights: ["Hero slider", "Filter produk", "Checkout 3 langkah"],
-    process: {
-      wireframe: "/images/pancarona/wireframe.png",
-      design: "/images/pancarona/design.png",
-    },
-    features: [
-      {
-        title: "Katalog dan filter produk",
-        description: "Cari berdasarkan kategori, ukuran, dan harga.",
-      },
-      {
-        title: "Checkout",
-        description: "Keranjang sampai bayar dalam 3 langkah.",
-        featured: true,
-      },
-      {
-        title: "Autentikasi",
-        description: "Login dan akun pelanggan.",
-      },
-      {
-        title: "Dashboard admin",
-        description: "Kelola produk, stok, dan pesanan.",
-      },
-    ],
-  },
-  {
-    id: 3,
-    image: "/images/card1.png",
-    hero: "/images/card1.png",
-    tags: ["Web Design", "MERN Stack", "E-Commerce"],
-    category: "Web",
-    title: "Pancarona",
-    description:
-      "Platform e-commerce fashion dengan nuansa quiet luxury dan minimalisme yang rapi, dibuat untuk UMKM Clothing.",
-    href: "https://pancarona.com",
+    // challenges: {
 
-    info: {
-      client: "UMKM Clothing",
-      role: "UI/UX, Frontend, Backend",
-      stack: "MongoDB, Express, React, Node",
-      duration: "3 bulan",
-    },
-    highlights: ["Hero slider", "Filter produk", "Checkout 3 langkah"],
-    process: {
-      wireframe: "/images/pancarona/wireframe.png",
-      design: "/images/pancarona/design.png",
-    },
-    features: [
-      {
-        title: "Katalog dan filter produk",
-        description: "Cari berdasarkan kategori, ukuran, dan harga.",
-      },
-      {
-        title: "Checkout",
-        description: "Keranjang sampai bayar dalam 3 langkah.",
-        featured: true,
-      },
-      {
-        title: "Autentikasi",
-        description: "Login dan akun pelanggan.",
-      },
-      {
-        title: "Dashboard admin",
-        description: "Kelola produk, stok, dan pesanan.",
-      },
-    ],
+    // }
   },
 ];
 
