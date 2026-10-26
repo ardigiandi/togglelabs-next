@@ -18,7 +18,7 @@ export default async function DetailProject({ params }: Props) {
   // const total = String(projects.length).padStart(2, "0");
 
   return (
-    <main className="mx-auto w-full max-w-6xl px-6 py-8 text-white">
+    <main className="mx-auto w-full md:max-w-6xl py-8 text-white">
       <section className="pt-36 px-5 md:px-0">
         <div className="max-w-6xl mx-auto">
           <Link href="/" className="flex gap-2 items-center w-fit">
@@ -75,18 +75,20 @@ export default async function DetailProject({ params }: Props) {
             <Image
               src={project.hero}
               alt={`${project.title} E-Commerce App preview`}
-              width={1200}
-              height={800}
-              quality={100}
-              className="w-full h-auto"
-            />
+              width={1920}
+              height={1080}
+              sizes="(min-width: 1280px) 1152px, 100vw"
+              quality={90}
+              priority
+              className="h-auto w-full rounded-2xl"
+            />  
           </div>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto mt-24 border-b border-white/10 pb-20 px-5 md:px-0">
+      <section className="mt-24 border-b border-white/10 pb-20 px-5 md:px-0">
         <div className="flex gap-3 items-center">
-          <span className="text-xs font-semibold text-purple">01</span>
+          <span className="text-xs font-semibold text-purle">01</span>
           <h1 className="text-xs font-semibold text-abu leading-3.5 tracking-primary uppercase">
             Project overview
           </h1>
@@ -166,7 +168,7 @@ export default async function DetailProject({ params }: Props) {
         </h1>
       </section>
 
-      <section className="max-w-6xl mx-auto flex flex-col md:flex-row my-24 justify-between gap-5 md:gap-0 px-5 md:px-0">
+      <section className="md:max-w-6xl mx-auto flex flex-col md:flex-row my-24 justify-between gap-5 md:gap-0 px-5 md:px-0">
         <div className="flex flex-col w-full md:w-145">
           <div className="flex gap-2 items-center">
             <span className="text-xs font-semibold text-purple">02</span>
