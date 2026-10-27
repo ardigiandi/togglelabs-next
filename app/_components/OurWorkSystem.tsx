@@ -55,7 +55,7 @@ export default function OurWorkSystem() {
         </div>
         <div className="w-full md:w-67.5 px-8 pt-8 pb-14 bg-secondary rounded-3xl">
           <div className="flex justify-between items-center">
-           <div className="bg-biru/12 p-3 rounded-xl">
+            <div className="bg-biru/12 p-3 rounded-xl">
               <Image src="/images/pen-tool.svg" alt="#" width={20} height={20} />
             </div>
             <p className="text-[28px] font-extrabold text-biru/20">03</p>

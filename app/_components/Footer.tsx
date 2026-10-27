@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,28 +26,28 @@ export default function Footer() {
                 Explore
               </h1>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/#about"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/#services"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/#portfolio"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   Portofolio
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -55,28 +56,30 @@ export default function Footer() {
                 Contact
               </h1>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="mailto:hello@togglelabs.com"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   hello@togglelabs.com
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="tel:+628138247764"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   +62-8138247764
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="https://www.google.com/maps/place/ToggleLabs/@-6.227683,106.845263,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f42b5f8b8c9d:0x8b8d8d8d8d8d8d8d!8m2!3d-6.227683!4d106.845263"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm md:text-base text-abu leading-4 tracking-primary font-normal"
                 >
                   Jl. Bulungan No.76,Kota Jakarta Selatan 12130
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

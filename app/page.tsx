@@ -15,13 +15,21 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Tech />
-      <WhoWeAre />
-      <HowWeHelp />
-      <OurProjects />
+      <div id="about">
+        <WhoWeAre />
+      </div>
+      <div id="services">
+        <HowWeHelp />
+      </div>
+      <div id="portofolio">
+        <OurProjects />
+      </div>
       <OurWorkSystem />
-      <Testimonials />
+      <div id="testimoni">
+        <Testimonials />
+      </div>
       <WorkTogether />
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
